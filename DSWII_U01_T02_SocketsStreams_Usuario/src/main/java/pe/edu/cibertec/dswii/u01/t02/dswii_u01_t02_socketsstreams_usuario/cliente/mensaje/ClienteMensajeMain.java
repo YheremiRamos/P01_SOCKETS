@@ -12,7 +12,7 @@ public class ClienteMensajeMain {
         //localhost = 127.0.0.1 -
         ClienteMensaje cliente = new ClienteMensaje("localhost", 2999);
         try {
-            cliente.enviarMensaje("Cliente mensaje enviado");
+            cliente.enviarMensaje("Este es un mensaje que el cliente esta enviando");
         } catch (IOException e) {
             e.printStackTrace();
         }

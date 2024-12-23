@@ -28,6 +28,7 @@ public class ClienteMensaje {
         escritorMensaje.println(mensaje);
 
         System.out.println("Mensaje enviado!");
+        System.out.println("Cuerpo del mensaje: " + " - " + mensaje);
         escritorMensaje.close();
         flujoSalida.close();
         socketCliente.close();

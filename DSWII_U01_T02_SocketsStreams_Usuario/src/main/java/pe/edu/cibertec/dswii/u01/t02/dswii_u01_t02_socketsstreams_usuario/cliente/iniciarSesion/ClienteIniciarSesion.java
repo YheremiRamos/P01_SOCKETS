@@ -30,6 +30,7 @@ public class ClienteIniciarSesion {
         ObjectOutputStream escritorMensaje = new ObjectOutputStream(flujoSalida);
         escritorMensaje.writeObject(usuario);
         System.out.println("Mensaje enviado!");
+        System.out.println("Cuerpo del mensaje" + " - " + usuario);
         escritorMensaje.close();
         flujoSalida.close();
         socketCliente.close();
